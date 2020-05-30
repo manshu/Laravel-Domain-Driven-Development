@@ -19,20 +19,6 @@ Route::group(['namespace' => 'Pages\Controllers'], function () {
     Route::get('/', 'PagesController@index')->name('home');
 });
 
-
-// Backend
-
-Route::group(['prefix' => 'user', 'namespace' => 'Dashboard\Controllers'], function () {
-    Route::get('/', 'UserController@index')->name('user.home');
-});
-
-
-Route::group(['prefix' => 'admin', 'Dashboard\Controllers'], function () {
-    Route::get('/', 'AdminController@index')->name('admin.home');
-});
-
-
-
 Route::group(['namespace' => 'Auth\Controllers'], function () {
     Route::get('login', 'LoginController@showLoginForm')->name('login');
     Route::post('login', 'LoginController@login');

@@ -36,4 +36,14 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function isAdmin()
+    {
+        return env('ADMIN_ROUTE');
+    }
+
+    public function isUser()
+    {
+        return env('USER_ROUTE');
+    }
 }
