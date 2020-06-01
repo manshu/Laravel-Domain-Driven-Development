@@ -1,6 +1,6 @@
 <?php
 
-namespace WebApp\Http\Dashboard\Controllers;
+namespace WebApp\Http\Admin\Controllers;
 
 use Illuminate\Http\Request;
 use WebApp\App\Controllers\Controller;
